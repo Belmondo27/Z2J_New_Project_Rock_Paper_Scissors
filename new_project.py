@@ -37,7 +37,6 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "YOU WIN!" + '\x1b[0m')  
                 elif sinlge_choose == "Rock" and computer1 == "Paper":
                     print('\x1b[48;2;255;0;0m\x1b[38;2;255;255;0m' + "YOU LOSE!" + '\x1b[0m')  
-                    break
             elif sinlge_choose == "Paper":
                 print("Your choose: ", sinlge_choose)
                 computer1 = random.choice(computer)
@@ -48,7 +47,6 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "YOU WIN!" + '\x1b[0m')
                 elif sinlge_choose == "Paper" and computer1 == "Scissors":
                     print('\x1b[48;2;255;0;0m\x1b[38;2;255;255;0m' + "YOU LOSE!" + '\x1b[0m')  
-                    break
             elif sinlge_choose == "Scissors":
                 print("Your choose: ", sinlge_choose)
                 computer1 = random.choice(computer)
@@ -59,7 +57,6 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "YOU WIN!" + '\x1b[0m')  
                 elif sinlge_choose == "Scissors" and computer1 == "Rock":
                     print('\x1b[48;2;255;0;0m\x1b[38;2;255;255;0m' + "YOU LOSE!" + '\x1b[0m')  
-                    break
     elif menu_choose == "2":
         while True:
             print("Multi Player Mode")
@@ -88,7 +85,6 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 1 WIN!" + '\x1b[0m')  
                 elif multi_choose == "Rock" and multi_choose2 == "Paper":
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 2 WIN!" + '\x1b[0m')  
-                    break
             elif multi_choose == "Paper":
                 if multi_choose == multi_choose2:
                     print('\x1b[48;2;255;255;0m\x1b[38;2;255;255;0m' + "DRAW! SO CLOSE!" + '\x1b[0m')  
@@ -96,7 +92,6 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 1 WIN!" + '\x1b[0m')  
                 elif multi_choose == "Paper" and multi_choose2 == "Scissors":
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 2 WIN!" + '\x1b[0m')  
-                    break
             elif multi_choose == "Scissors":
                 if multi_choose == multi_choose2:
                     print('\x1b[48;2;255;255;0m\x1b[38;2;255;255;0m' + "DRAW! SO CLOSE!" + '\x1b[0m')  
@@ -104,5 +99,4 @@ while True:
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 1 WIN!" + '\x1b[0m')  
                 elif multi_choose == "Scissors" and multi_choose2 == "Rock":
                     print('\x1b[48;2;0;255;0m\x1b[38;2;255;255;0m' + "PLAYER 2 WIN!" + '\x1b[0m')  
-                    break
     print( "*" * 68)
